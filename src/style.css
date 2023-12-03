@@ -1,0 +1,9 @@
+.main-page {
+    background-image: url('./components/content/mc-background.jpg');
+    filter: blur(8px);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 90vh;
+}

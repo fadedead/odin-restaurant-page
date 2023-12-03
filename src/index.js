@@ -1,3 +1,5 @@
+import './style.css';
+
 function page(element) {
     // Add Header
     let header = document.createElement('div'); 
@@ -6,13 +8,10 @@ function page(element) {
     
     // Add Container
     let container = document.createElement('div'); 
-    container.style = 'background-color: white; height: 85vh;'
-    element.appendChild(container);
+    container.classList.add('main-page');
+    
 
-    // Add Footer 
-    let footer = document.createElement('div'); 
-    footer.style = 'background-color: black; height: 5vh;'
-    element.appendChild(footer);
+    element.appendChild(container);
 }
 
 const body = document.querySelector('body');
