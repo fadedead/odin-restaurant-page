@@ -1,3 +1,50 @@
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('./components/Minecraftia-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Minecraftia', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    height: 8vh;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: url('./components/header/background.jpeg');
+    background-size: contain;
+}
+
+.title-text {
+    margin: 0;
+    
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.nav-btn {
+    height: 3rem;
+    width: 8rem;
+    margin-left: 1rem;
+
+    border-radius: .5rem;
+    border: 1px solid black;
+
+    color: whitesmoke;
+    background-image: url('./components/header/button-background.png');
+}
+
 .main-page {
     background-image: url('./components/content/mc-background.jpg');
     filter: blur(8px);
@@ -5,5 +52,6 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 90vh;
+    height: 92vh;
 }
+
