@@ -47,11 +47,30 @@ body {
 
 .main-page {
     background-image: url('./components/content/mc-background.jpg');
-    filter: blur(8px);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
-
+    
     height: 92vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.home {
+    backdrop-filter: blur(10px);
+    border: 2px solid limegreen;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    height: 80%;
+    width: 60%;
+}

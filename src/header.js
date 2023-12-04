@@ -17,7 +17,7 @@ export default function getHeader() {
     // Create the buttons
     let homeBtn = document.createElement('button');
     let menuBtn = document.createElement('button');
-    let aboutBtn = document.createElement('button');
+    let contactBtn = document.createElement('button');
 
     homeBtn.classList.add('nav-btn');
     homeBtn.innerHTML = 'Home';
@@ -27,9 +27,9 @@ export default function getHeader() {
     menuBtn.innerHTML = 'Menu';
     navBar.appendChild(menuBtn);
 
-    aboutBtn.classList.add('nav-btn');
-    aboutBtn.innerHTML = 'About';
-    navBar.appendChild(aboutBtn);
+    contactBtn.classList.add('nav-btn');
+    contactBtn.innerHTML = 'About';
+    navBar.appendChild(contactBtn);
 
     element.appendChild(navBar);
 

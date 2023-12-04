@@ -1,5 +1,6 @@
 import './style.css';
 import getHeader from './header';
+import getHome from './home';
 
 function page(element) {
     // Add Header
@@ -9,6 +10,8 @@ function page(element) {
     // Add Container
     let container = document.createElement('div'); 
     container.classList.add('main-page');
+
+    container.appendChild(getHome());
 
     element.appendChild(container);
 }
