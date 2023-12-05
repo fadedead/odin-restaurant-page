@@ -1,6 +1,6 @@
 import './style.css';
 
-export default function getHeader() {
+export default function getHeader(homeBtnOnclick) {
     // Create the header div
     let element = document.createElement('div');
     element.classList.add('header');
@@ -22,13 +22,14 @@ export default function getHeader() {
     homeBtn.classList.add('nav-btn');
     homeBtn.innerHTML = 'Home';
     navBar.appendChild(homeBtn);
+    homeBtn.addEventListener('click', homeBtnOnclick);
 
     menuBtn.classList.add('nav-btn');
     menuBtn.innerHTML = 'Menu';
     navBar.appendChild(menuBtn);
 
     contactBtn.classList.add('nav-btn');
-    contactBtn.innerHTML = 'About';
+    contactBtn.innerHTML = 'Contact Us';
     navBar.appendChild(contactBtn);
 
     element.appendChild(navBar);
