@@ -9,7 +9,7 @@ export default function getMenu() {
     let foodPng = new Image();
     foodPng.src = Food;
     
-    // let foodItems = {'Apple': {index : [0, 10], price: 1}, 'Gapple': [0, 11], 'Egg': [0, 12], 'Cake': [1, 13], 'Stew': [4, 7], 'Rabbit Stew': [4, 8], 'Cooked Fish': [5, 10], 'Cookie': [5, 12], 'Cooked Meat': [6, 10], 'Baked Potato': [7, 6], 'Bread': [2, 9], 'Water': [4, 11]};
+    // Items object to map the position and price of items
     let foodItems = {
         'Apple': {index: [0, 10], price: 2},
         'Gapple': {index: [0, 11], price: 10},
@@ -24,11 +24,7 @@ export default function getMenu() {
         'Bread': {index: [2, 9], price: 3},
         'Water': {index: [4, 11], price: 1}
       };
-
-
-    // Add title
-  
-    
+   
     // Add the items
     let items = getItems(foodItems, foodPng);
     items.classList.add('menu-items');
@@ -38,12 +34,14 @@ export default function getMenu() {
 }
 
 function getItems(items, foodPng) {
+    let menu = document.createElement('div');
+
+    // Add title for menu
     let title = document.createElement('p');
     title.innerHTML = 'Menu';
     title.classList.add('menu-title');
-    
-    let menu = document.createElement('div');
     menu.appendChild(title);
+
     // loop and add get canvas and price of each food item
     for(let item in items) {
         let currItem = document.createElement('div');

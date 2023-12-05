@@ -66,7 +66,7 @@ body {
     
     height: 100%;
     width: 100%;
-    
+
     backdrop-filter: blur(10px);
 }
 
@@ -149,4 +149,11 @@ body {
     height: 100%;
         
     background-color: #8b8b8b;
+}
+
+.contact-us {
+    height: 100%;
+    width: 100%;
+
+    backdrop-filter: blur(10px);
 }

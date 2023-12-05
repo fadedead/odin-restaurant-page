@@ -2,6 +2,7 @@ import './style.css';
 import getHeader from './header';
 import getHome from './home';
 import getMenu from './menu';
+import getContactUs from './contactus';
 
 function page(element) {
   
@@ -33,8 +34,7 @@ function homeBtnOnclick() {
 function menuBtnOnclick() {
     let content = document.getElementsByClassName('main-page')[0];
     if(content.firstChild) content.removeChild(content.firstChild);
-   content.appendChild(getMenu());
-
+    content.appendChild(getMenu());
     return;
 }
 
