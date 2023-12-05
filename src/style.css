@@ -8,6 +8,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Minecraftia', sans-serif;
+    /* border: 1px solid limegreen; */
 }
 
 body {
@@ -60,17 +61,39 @@ body {
 
 .home {
     backdrop-filter: blur(10px);
-    border: 2px solid limegreen;
-
+    
     height: 100%;
     width: 100%;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.book {
+    height: 700px;
+    width: 570px;
+}
+
 .page {
-    height: 80%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
+
+    object-fit: fill;
+}
+
+.about-container {
+    position: relative;
+    height: 85%;
+    width: 80%;
+
+    bottom: 92%;
+    left: 10%;
+}
+
+.about {
+    margin: 0;
+    height: 100%;
+
+    text-align: justify;
 }
